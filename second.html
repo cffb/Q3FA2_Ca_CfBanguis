@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Second Page</title>
+    <script>
+        function changeimage(button) {
+            var img = document.getElementById("image");
+
+            if (button === "button1") {
+                // Change the image
+                img.src = "images/JoshuaGarcia2.png";
+            } else if (button === "button2") {
+                // Revert back to the original image
+                img.src = "images/JoshuaGarcia1.png";
+            }
+        }
+    </script>
+</head>
+<body>
+    <h1>Welcome to the Second Page (guess who is the real Joshua Garcia)</h1>
+    
+    <button onclick="changeimage('button1')">Change Image</button>
+    <button onclick="changeimage('button2')">Revert to Original</button>
+
+    <img id="image" src="images/JoshuaGarcia1.png" alt="">
+</body>
+</html>
